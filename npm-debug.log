@@ -1,0 +1,169 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.34
+4 warn package.json playlytics@0.0.0 No description
+5 warn package.json playlytics@0.0.0 No repository field.
+6 warn package.json playlytics@0.0.0 No README data
+7 verbose readDependencies using package.json deps
+8 verbose install where, deps [ '/Users/carlosortega/Sites/spotify',
+8 verbose install   [ 'grunt',
+8 verbose install     'grunt-contrib-connect',
+8 verbose install     'grunt-contrib-copy',
+8 verbose install     'grunt-contrib-jade',
+8 verbose install     'grunt-contrib-stylus',
+8 verbose install     'grunt-contrib-watch',
+8 verbose install     'grunt-gh-pages',
+8 verbose install     'matchdep' ] ]
+9 info preinstall playlytics@0.0.0
+10 verbose readDependencies using package.json deps
+11 verbose cache add [ 'grunt-contrib-stylus@0.20.0', null ]
+12 verbose cache add name=undefined spec="grunt-contrib-stylus@0.20.0" args=["grunt-contrib-stylus@0.20.0",null]
+13 verbose parsed url { protocol: null,
+13 verbose parsed url   slashes: null,
+13 verbose parsed url   auth: null,
+13 verbose parsed url   host: null,
+13 verbose parsed url   port: null,
+13 verbose parsed url   hostname: null,
+13 verbose parsed url   hash: null,
+13 verbose parsed url   search: null,
+13 verbose parsed url   query: null,
+13 verbose parsed url   pathname: 'grunt-contrib-stylus@0.20.0',
+13 verbose parsed url   path: 'grunt-contrib-stylus@0.20.0',
+13 verbose parsed url   href: 'grunt-contrib-stylus@0.20.0' }
+14 verbose already installed skipping grunt-contrib-watch@~0.6.1 /Users/carlosortega/Sites/spotify
+15 verbose already installed skipping grunt-gh-pages@^0.10.0 /Users/carlosortega/Sites/spotify
+16 verbose cache add name="grunt-contrib-stylus" spec="0.20.0" args=["grunt-contrib-stylus","0.20.0"]
+17 verbose parsed url { protocol: null,
+17 verbose parsed url   slashes: null,
+17 verbose parsed url   auth: null,
+17 verbose parsed url   host: null,
+17 verbose parsed url   port: null,
+17 verbose parsed url   hostname: null,
+17 verbose parsed url   hash: null,
+17 verbose parsed url   search: null,
+17 verbose parsed url   query: null,
+17 verbose parsed url   pathname: '0.20.0',
+17 verbose parsed url   path: '0.20.0',
+17 verbose parsed url   href: '0.20.0' }
+18 verbose addNamed [ 'grunt-contrib-stylus', '0.20.0' ]
+19 verbose addNamed [ '0.20.0', '0.20.0' ]
+20 silly lockFile acbc5348-grunt-contrib-stylus-0-20-0 grunt-contrib-stylus@0.20.0
+21 verbose lock grunt-contrib-stylus@0.20.0 /Users/carlosortega/.npm/acbc5348-grunt-contrib-stylus-0-20-0.lock
+22 verbose already installed skipping matchdep@* /Users/carlosortega/Sites/spotify
+23 verbose request where is /grunt-contrib-stylus
+24 verbose request registry https://registry.npmjs.org/
+25 verbose request id 561d9e3e05e5e776
+26 verbose url raw /grunt-contrib-stylus
+27 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-contrib-stylus' ]
+28 verbose url resolved https://registry.npmjs.org/grunt-contrib-stylus
+29 verbose request where is https://registry.npmjs.org/grunt-contrib-stylus
+30 info trying registry request attempt 1 at 18:48:50
+31 verbose etag "7RGRFZ812BSG95J4DV5MNOQCQ"
+32 http GET https://registry.npmjs.org/grunt-contrib-stylus
+33 verbose already installed skipping grunt@~0.4.5 /Users/carlosortega/Sites/spotify
+34 verbose already installed skipping grunt-contrib-connect@^0.9.0 /Users/carlosortega/Sites/spotify
+35 verbose already installed skipping grunt-contrib-copy@~0.8.0 /Users/carlosortega/Sites/spotify
+36 verbose cache add [ 'grunt-contrib-jade@0.20.0', null ]
+37 verbose cache add name=undefined spec="grunt-contrib-jade@0.20.0" args=["grunt-contrib-jade@0.20.0",null]
+38 verbose parsed url { protocol: null,
+38 verbose parsed url   slashes: null,
+38 verbose parsed url   auth: null,
+38 verbose parsed url   host: null,
+38 verbose parsed url   port: null,
+38 verbose parsed url   hostname: null,
+38 verbose parsed url   hash: null,
+38 verbose parsed url   search: null,
+38 verbose parsed url   query: null,
+38 verbose parsed url   pathname: 'grunt-contrib-jade@0.20.0',
+38 verbose parsed url   path: 'grunt-contrib-jade@0.20.0',
+38 verbose parsed url   href: 'grunt-contrib-jade@0.20.0' }
+39 verbose cache add name="grunt-contrib-jade" spec="0.20.0" args=["grunt-contrib-jade","0.20.0"]
+40 verbose parsed url { protocol: null,
+40 verbose parsed url   slashes: null,
+40 verbose parsed url   auth: null,
+40 verbose parsed url   host: null,
+40 verbose parsed url   port: null,
+40 verbose parsed url   hostname: null,
+40 verbose parsed url   hash: null,
+40 verbose parsed url   search: null,
+40 verbose parsed url   query: null,
+40 verbose parsed url   pathname: '0.20.0',
+40 verbose parsed url   path: '0.20.0',
+40 verbose parsed url   href: '0.20.0' }
+41 verbose addNamed [ 'grunt-contrib-jade', '0.20.0' ]
+42 verbose addNamed [ '0.20.0', '0.20.0' ]
+43 silly lockFile 8e4b2402-grunt-contrib-jade-0-20-0 grunt-contrib-jade@0.20.0
+44 verbose lock grunt-contrib-jade@0.20.0 /Users/carlosortega/.npm/8e4b2402-grunt-contrib-jade-0-20-0.lock
+45 verbose request where is /grunt-contrib-jade
+46 verbose request registry https://registry.npmjs.org/
+47 verbose url raw /grunt-contrib-jade
+48 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-contrib-jade' ]
+49 verbose url resolved https://registry.npmjs.org/grunt-contrib-jade
+50 verbose request where is https://registry.npmjs.org/grunt-contrib-jade
+51 info trying registry request attempt 1 at 18:48:50
+52 verbose etag "4JB5Z5DNG5EJJK1CB7NU7JWD4"
+53 http GET https://registry.npmjs.org/grunt-contrib-jade
+54 http 304 https://registry.npmjs.org/grunt-contrib-jade
+55 silly registry.get cb [ 304,
+55 silly registry.get   { date: 'Sun, 22 Feb 2015 02:48:50 GMT',
+55 silly registry.get     server: 'Apache',
+55 silly registry.get     via: '1.1 varnish',
+55 silly registry.get     'last-modified': 'Sun, 22 Feb 2015 02:48:50 GMT',
+55 silly registry.get     'cache-control': 'max-age=60',
+55 silly registry.get     etag: '"4JB5Z5DNG5EJJK1CB7NU7JWD4"',
+55 silly registry.get     age: '0',
+55 silly registry.get     'x-served-by': 'cache-lax1425-LAX',
+55 silly registry.get     'x-cache': 'MISS',
+55 silly registry.get     'x-cache-hits': '0',
+55 silly registry.get     'x-timer': 'S1424573330.210107,VS0,VE71',
+55 silly registry.get     vary: 'Accept',
+55 silly registry.get     'content-length': '0',
+55 silly registry.get     'keep-alive': 'timeout=10, max=50',
+55 silly registry.get     connection: 'Keep-Alive' } ]
+56 verbose etag https://registry.npmjs.org/grunt-contrib-jade from cache
+57 silly lockFile 8e4b2402-grunt-contrib-jade-0-20-0 grunt-contrib-jade@0.20.0
+58 silly lockFile 8e4b2402-grunt-contrib-jade-0-20-0 grunt-contrib-jade@0.20.0
+59 http 304 https://registry.npmjs.org/grunt-contrib-stylus
+60 silly registry.get cb [ 304,
+60 silly registry.get   { date: 'Sun, 22 Feb 2015 02:48:50 GMT',
+60 silly registry.get     server: 'Apache',
+60 silly registry.get     via: '1.1 varnish',
+60 silly registry.get     'last-modified': 'Sun, 22 Feb 2015 02:48:50 GMT',
+60 silly registry.get     'cache-control': 'max-age=60',
+60 silly registry.get     etag: '"7RGRFZ812BSG95J4DV5MNOQCQ"',
+60 silly registry.get     age: '0',
+60 silly registry.get     'x-served-by': 'cache-lax1426-LAX',
+60 silly registry.get     'x-cache': 'HIT',
+60 silly registry.get     'x-cache-hits': '1',
+60 silly registry.get     'x-timer': 'S1424573330.210287,VS0,VE308',
+60 silly registry.get     vary: 'Accept',
+60 silly registry.get     'content-length': '0',
+60 silly registry.get     'keep-alive': 'timeout=10, max=50',
+60 silly registry.get     connection: 'Keep-Alive' } ]
+61 verbose etag https://registry.npmjs.org/grunt-contrib-stylus from cache
+62 silly lockFile cc9b6d99--grunt-contrib-stylus-0-20-0-tgz https://registry.npmjs.org/grunt-contrib-stylus/-/grunt-contrib-stylus-0.20.0.tgz
+63 verbose lock https://registry.npmjs.org/grunt-contrib-stylus/-/grunt-contrib-stylus-0.20.0.tgz /Users/carlosortega/.npm/cc9b6d99--grunt-contrib-stylus-0-20-0-tgz.lock
+64 verbose addRemoteTarball [ 'https://registry.npmjs.org/grunt-contrib-stylus/-/grunt-contrib-stylus-0.20.0.tgz',
+64 verbose addRemoteTarball   '9b74e82aa199a9d0d668fb36d49f1973abc01658' ]
+65 info retry fetch attempt 1 at 18:48:50
+66 verbose fetch to= /var/folders/xc/2dfvl37n2sq99pzs5_2zw4c00000gn/T/npm-6823-mUTKOG-n/registry.npmjs.org/grunt-contrib-stylus/-/grunt-contrib-stylus-0.20.0.tgz
+67 http GET https://registry.npmjs.org/grunt-contrib-stylus/-/grunt-contrib-stylus-0.20.0.tgz
+68 http 200 https://registry.npmjs.org/grunt-contrib-stylus/-/grunt-contrib-stylus-0.20.0.tgz
+69 silly lockFile cc9b6d99--grunt-contrib-stylus-0-20-0-tgz https://registry.npmjs.org/grunt-contrib-stylus/-/grunt-contrib-stylus-0.20.0.tgz
+70 silly lockFile cc9b6d99--grunt-contrib-stylus-0-20-0-tgz https://registry.npmjs.org/grunt-contrib-stylus/-/grunt-contrib-stylus-0.20.0.tgz
+71 silly lockFile acbc5348-grunt-contrib-stylus-0-20-0 grunt-contrib-stylus@0.20.0
+72 silly lockFile acbc5348-grunt-contrib-stylus-0-20-0 grunt-contrib-stylus@0.20.0
+73 error Error: version not found: grunt-contrib-jade@0.20.0
+73 error     at /usr/local/lib/node_modules/npm/lib/cache/add-named.js:125:12
+73 error     at saved (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/get.js:167:7)
+73 error     at Object.oncomplete (fs.js:108:15)
+74 error If you need help, you may report this *entire* log,
+74 error including the npm and node versions, at:
+74 error     <http://github.com/npm/npm/issues>
+75 error System Darwin 14.0.0
+76 error command "node" "/usr/local/bin/npm" "install"
+77 error cwd /Users/carlosortega/Sites/spotify
+78 error node -v v0.10.34
+79 error npm -v 1.4.28
+80 verbose exit [ 1, true ]

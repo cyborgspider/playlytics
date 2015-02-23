@@ -1,0 +1,77 @@
+doctype html
+html(ng-app="app")
+	head
+		title Playlytics
+		link(href="css/styles.css", rel="stylesheet")
+		script(src='//use.typekit.net/mmr6vas.js')
+		script.
+			try{Typekit.load();}catch(e){}
+
+
+	body(ng-controller="searchSongCtrl")
+		.hero
+			.container
+				.row
+					h1 Playlytics
+					h2 It&rsquo;s what&rsquo;s big right now.
+		
+				.row
+					form(ng-submit="searchSong()", novalidate, name="searchForm")
+						.form-group
+							input.form-control(type="text", placeholder="Search a song", id="searchSongInput",  ng-model="tag", required)
+							button.btn(type="submit") Search
+
+		.container
+			.row
+				.col-sm-7
+					h2 Search Results
+					//-TODO: Figure out show and hide
+					p(ng-hide="") Search for a track above.
+
+					ul.result-list(ng-show="searchSong")
+						li(ng-repeat="data in songInfo")
+							img.track-avatar(ng-src="{{data.album.images[0].url}}")
+
+							.track-info
+								h3 {{ data.name }}
+								p(ng-repeat= "artist in data.artists") <em>Artist</em> {{ artist.name }}
+								p <em>Popularity</em> {{ data.popularity }}
+
+							.track-controls
+								button.btn(ng-click="addToPlaylist")
+									i.fa.fa-plus
+
+				.col-sm-5
+					.panel(ng-controller="playlistCtrl")
+						h2 My Playlist
+
+						.playlist-info
+							h3 Playlist Duration: {{ totalDuration | timeConverter }}
+							h3 Coolness Factor: {{ coolFactor }}
+
+						ul.playlist
+							li(ng-repeat="song in playlistData | orderBy:'order'")
+								img.track-avatar(ng-src="{{ song.album_art }}")
+
+								.track-info
+										h3 {{ song.name }}
+										p {{ song.artist }}
+										p <em>Popularity</em> {{ song.popularity }}	 |  <em>Duration</em> {{ song.duration | timeConverter }}
+
+								.track-controls
+									button.btn(ng-click="addToPlaylist")
+										i.fa.fa-minus
+									button.btn(ng-click="orderUp")
+										i.fa.fa-caret-up
+									button.btn(ng-click="orderDown")
+										i.fa.fa-caret-down
+
+
+		script(src="http://code.jquery.com/jquery-2.0.3.min.js")
+		script(src="http://cdnjs.cloudflare.com/ajax/libs/velocity/0.11.9/jquery.velocity.min.js")
+		script(src="/lib/angular/angular.min.js")
+		script(src="/lib/angular-spotify/dist/angular-spotify.min.js")
+		script(src="/js/app.js")
+		script(src="/js/controllers/searchSongCtrl.js")
+		script(src="/js/controllers/playlistCtrl.js")
+		script(src="/js/filters/timeConverter.js")

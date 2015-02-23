@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <title>Playlytics</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="//use.typekit.net/mmr6vas.js"></script>
+    <script>
+      try{Typekit.load();}catch(e){}
+      
+      
+    </script>
+  </head>
+  <body ng-controller="searchSongCtrl">
+    <div class="hero">
+      <div class="container">
+        <div class="row">
+          <h1>Playlytics</h1>
+          <h2>It&rsquo;s what&rsquo;s big right now.</h2>
+        </div>
+        <div class="row">
+          <form ng-submit="searchSong()" novalidate name="searchForm">
+            <div class="form-group">
+              <input type="text" placeholder="Search a song" id="searchSongInput" ng-model="tag" required class="form-control">
+              <button type="submit" class="btn">Search</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-7">
+          <h2>Search Results</h2>
+          <p ng-hide="">Search for a track above.</p>
+          <ul ng-show="searchSong" class="result-list">
+            <li ng-repeat="data in songInfo"><img ng-src="{{data.album.images[0].url}}" class="track-avatar">
+              <div class="track-info">
+                <h3>{{ data.name }}</h3>
+                <p ng-repeat="artist in data.artists"><em>Artist</em> {{ artist.name }}</p>
+                <p><em>Popularity</em> {{ data.popularity }}</p>
+              </div>
+              <div class="track-controls">
+                <button ng-click="addToPlaylist" class="btn"><i class="fa fa-plus"></i></button>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-5">
+          <div ng-controller="playlistCtrl" class="panel">
+            <h2>My Playlist</h2>
+            <div class="playlist-info">
+              <h3>Playlist Duration: {{ totalDuration | timeConverter }}</h3>
+              <h3>Coolness Factor: {{ coolFactor }}</h3>
+            </div>
+            <ul class="playlist">
+              <li ng-repeat="song in playlistData | orderBy:'order'"><img ng-src="{{ song.album_art }}" class="track-avatar">
+                <div class="track-info">
+                  <h3>{{ song.name }}</h3>
+                  <p>{{ song.artist }}</p>
+                  <p><em>Popularity</em> {{ song.popularity }}	 |  <em>Duration</em> {{ song.duration | timeConverter }}</p>
+                </div>
+                <div class="track-controls">
+                  <button ng-click="addToPlaylist" class="btn"><i class="fa fa-minus"></i></button>
+                  <button ng-click="orderUp" class="btn"><i class="fa fa-caret-up"></i></button>
+                  <button ng-click="orderDown" class="btn"><i class="fa fa-caret-down"></i></button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/velocity/0.11.9/jquery.velocity.min.js"></script>
+    <script src="/lib/angular/angular.min.js"></script>
+    <script src="/lib/angular-spotify/dist/angular-spotify.min.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/controllers/searchSongCtrl.js"></script>
+    <script src="/js/controllers/playlistCtrl.js"></script>
+    <script src="/js/filters/timeConverter.js"></script>
+  </body>
+</html>
